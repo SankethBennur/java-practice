@@ -1,3 +1,28 @@
+/*
+Given a linked list with a loop, the task is to find whether it is palindrome or not. You are not allowed to remove the loop.
+Example 1:
+Input: head = [1,2,3,2,1] 
+Output: true
+Explanation: ```plain
+1 -> 2 -> 3 -> 2
+         /|\           \|/
+              --------- 1
+```
+Linked list is 1 2 3 2 1 which is a palindrome.
+Example 2:
+Input: head = [1, 2, 3, 4, 1] 
+Output: false
+Explanation: ```javascript
+1 -> 2 -> 3 -> 4 
+         /|\           \|/
+              --------- 1
+```
+Linked list is 1 2 3 4 1 which is not a palindrome.
+Constraints:
+	• 1<=length of Linked List <=105105
+1<= SinglyLinkedList.data<=1000
+*/
+
 class Solution {
     public boolean isPalindrome(SinglyLinkedListNode head) {
         if (head == null || head.next == null) {
